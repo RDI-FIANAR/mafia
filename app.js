@@ -26,6 +26,7 @@ app.set('view engine', 'ejs');
 require('./lib/router.js')(app);
 
 var userCountInterval = null;
+var port = process.env.PORT || __conf.port;
 
 module.exports = {
 
@@ -62,7 +63,7 @@ module.exports = {
         }
       }
 
-      this.server = app.listen(__conf.port, __conf.bind, callback);
+      this.server = app.listen(port, __conf.bind, callback);
       userCountInterval = setInterval(function() {
         var nbConnected = 0;
         var nbPlaying = 0;
@@ -87,7 +88,7 @@ module.exports = {
 
 if(isMain) {
   module.exports.start(function() {
-    console.log(('-- OpenParty ' + version + ' is ready on port ' + __conf.port).green);
+    console.log(('-- OpenParty ' + version + ' is ready on port ' + port).green);
   });
 
 
