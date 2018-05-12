@@ -4,7 +4,7 @@ module.exports = function() {
 
   return {
 
-    name: "Villager",
+    name: "Villageois",
     side: "village",
 
     actions: {

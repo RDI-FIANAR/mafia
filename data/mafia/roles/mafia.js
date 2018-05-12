@@ -4,7 +4,7 @@ module.exports = function() {
 
   return {
 
-    name: "Mafioso",
+    name: "Mafia",
     desc: "Vous devez assassiner tous les innocents villageois...",
     side: "mafia",
 

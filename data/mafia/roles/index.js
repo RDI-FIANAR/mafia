@@ -40,7 +40,7 @@ module.exports = {
     });
 
     if(!mafiaOk)
-      throw new Error("Vous devez avoir au moins un mafioso dans la partie.");
+      throw new Error("Vous devez avoir au moins un mafia dans la partie.");
 
     if(sum > room.players.length - playerShift)
       throw new Error("Trop de rôles par rapport au nombre de joueurs.");

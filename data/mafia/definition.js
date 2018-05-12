@@ -21,7 +21,7 @@ module.exports = function() {
 
   this.name        = "Mafia";
   this.version     = "0.1.0";
-  this.description = "Une version en ligne du jeu de Dimitry Davidoff - v" + this.version;
+  this.description = "Une version en ligne du jeu Mafia de Dimitry Davidoff - v" + this.version;
   this.minPlayers  = 3;
   this.maxPlayers  = 40;
   this.opVersion   = ">0.1.2";
@@ -49,7 +49,7 @@ module.exports = function() {
     callback(null);
 
     setTimeout(function() {
-      room.message("<strong><i>Vous vous trouvez dans le village de Salem. La Mafia rôde, et menace sérieusement la vie des villageois...</i></strong>");
+      room.message("<strong><i>Vous vous trouvez dans le village de la RDI. La Mafia rôde, et menace sérieusement la vie des villageois...</i></strong>");
 
       if(!room.gameplay.gamemasterMode)
         room.nextStage("mafia");
@@ -108,7 +108,7 @@ module.exports = function() {
     name: "Nombre de Détectives",
     type: Number,
     value: 0,
-    help: "Un détective peut découvrir, chaque nuit, le camp d'un joueur (innocent ou mafioso).",
+    help: "Un détective peut découvrir, chaque nuit, le camp d'un joueur (innocent ou mafia).",
     role: "detective"
   },
   {

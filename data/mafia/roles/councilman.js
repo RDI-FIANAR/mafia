@@ -69,4 +69,6 @@ var funReasons = [
   "emploi de fausses factures",
   "avoir perdu un pari",
   "avoir battu son chien",
+  "retard de payement des taxes communales",
+  "tentative de corruption d'agent communale"
 ];

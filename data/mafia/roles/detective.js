@@ -3,7 +3,7 @@ module.exports = function() {
   return {
 
     name: "Détective",
-    desc: "Vous pouvez découvrir le camp d'un joueur <strong>chaque nuit</strong> : innocent ou mafioso. Vous devez aider les villageois à repousser la Mafia...",
+    desc: "Vous pouvez découvrir le camp d'un joueur <strong>chaque nuit</strong> : innocent ou mafia. Vous devez aider les villageois à repousser la Mafia...",
     side: "village",
     night: true,
 
@@ -21,7 +21,7 @@ module.exports = function() {
 
           player.detectHasPlayed = true;
           player.sendAvailableActions();
-          var playerSide = (choice.player.roles.mafia ? "mafioso" : "innocent");
+          var playerSide = (choice.player.roles.mafia ? "mafia" : "innocent");
           player.message("<span class='mafia-stage-action mafia-role-action'><span class='glyphicon glyphicon-search'></span> " + choice.username + " est " + playerSide + "</span>");
 
         }

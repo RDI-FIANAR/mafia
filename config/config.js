@@ -19,6 +19,6 @@ module.exports = {
 
   name: "Mafia RDI",                   // custom server name
   welcomeMsg: "Un monde de tremperie et d'usurpation vous attend!<br/>Entrez un pseudonyme reconnaissable et commencez à jouer.",             // shown on "home" page
-  motd: "",                   // shown on "lobby" page
+  motd: "Pour commencer à jouer, rejoignez vos amis dans une des parties existantes ou créez en une nouvelle.",                   // shown on "lobby" page
   description: "Une petite application pour jouer à Mafia en tout temps sur votre navigateur. Fait par la RDI, pour la RDI.",            // shown on "about" page
 };
